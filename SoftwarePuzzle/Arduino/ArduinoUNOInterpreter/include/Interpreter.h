@@ -3,6 +3,9 @@
 
 #include "Arduino.h"
 
+#include "Arduino_FreeRTOS.h"
+#include "task.h"
+
 #define WRITE_PIN	1
 #define WAIT		2
 

@@ -38,9 +38,15 @@ void Interpreter::setAssembly(int aAssembly[], int aSize)
  */
 void Interpreter::runAssembly()
 {
-	if (!this->_isRunning)
+	//Reset pointer if necessary
+	this->_asmPointer = 0;
+
+	/*
+	 * Loop through all commands and execute them
+	 */
+	while (this->_asmPointer < this->_asmSize)
 	{
-		
+		runCommand(this->_assembly[this->_asmPointer]);
 	}
 }
 
@@ -61,7 +67,7 @@ void Interpreter::runCommand(int aCommand)
 	case WAIT:
 		// Pauses the thread with the next integer in the
 		// array as argument
-		delay(_assembly[++_asmPointer]);
+		vTaskDelay(_assembly[++_asmPointer]);
 		break;
 		
 	default:
@@ -70,22 +76,4 @@ void Interpreter::runCommand(int aCommand)
 
 	// Increase the command pointer
 	_asmPointer++;
-}
-
-void Interpreter::taskRunAssembly()
-{
-	// Reset pointer if necessary
-	this->_asmPointer   = 0;
-	// Set is running flag
-	this->_isRunning	= true;
-
-	/*
-	* Loop through all commands and execute them
-	*/
-	while (this->_isRunning && this->_asmPointer < this->_asmSize)
-	{
-		runCommand(this->_assembly[this->_asmPointer]);
-	}
-
-	this->_isRunning = false;
 }
