@@ -38,15 +38,9 @@ void Interpreter::setAssembly(int aAssembly[], int aSize)
  */
 void Interpreter::runAssembly()
 {
-	//Reset pointer if necessary
-	this->_asmPointer = 0;
-
-	/*
-	 * Loop through all commands and execute them
-	 */
-	while (this->_asmPointer < this->_asmSize)
+	if (!this->_isRunning)
 	{
-		runCommand(this->_assembly[this->_asmPointer]);
+		
 	}
 }
 
@@ -76,4 +70,22 @@ void Interpreter::runCommand(int aCommand)
 
 	// Increase the command pointer
 	_asmPointer++;
+}
+
+void Interpreter::taskRunAssembly()
+{
+	// Reset pointer if necessary
+	this->_asmPointer   = 0;
+	// Set is running flag
+	this->_isRunning	= true;
+
+	/*
+	* Loop through all commands and execute them
+	*/
+	while (this->_isRunning && this->_asmPointer < this->_asmSize)
+	{
+		runCommand(this->_assembly[this->_asmPointer]);
+	}
+
+	this->_isRunning = false;
 }

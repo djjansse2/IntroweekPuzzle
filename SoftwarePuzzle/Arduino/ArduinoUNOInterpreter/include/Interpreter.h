@@ -20,12 +20,17 @@ public:
 	void	runAssembly();
 
 private:
+	void	taskRunAssembly();
+
+private:
 	void	runCommand(int);
 
 private:
 	int*	_assembly;
 	int		_asmSize;
 	int		_asmPointer;
+
+    bool    _isRunning;
 };
 
 #endif
