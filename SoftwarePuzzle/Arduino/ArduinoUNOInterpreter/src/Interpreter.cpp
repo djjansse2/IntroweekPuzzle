@@ -38,6 +38,11 @@ void Interpreter::setAssembly(int aAssembly[], int aSize)
  */
 void Interpreter::runAssembly()
 {
+	if (_asmSize <= 0)
+	{
+		return;
+	}
+
 	//Reset pointer if necessary
 	this->_asmPointer = 0;
 
@@ -67,13 +72,21 @@ void Interpreter::runCommand(int aCommand)
 	case WAIT:
 		// Pauses the thread with the next integer in the
 		// array as argument
-		vTaskDelay(_assembly[++_asmPointer]);
+		vTaskDelay(pdMS_TO_TICKS(_assembly[++_asmPointer]));
 		break;
 		
 	default:
 		break;
 	}
 
-	// Increase the command pointer
-	_asmPointer++;
+	if (_asmPointer >= _asmSize)
+	{
+		// Reset the command pointer
+		_asmPointer = 0;
+	}
+	else
+	{
+		// Increase the command pointer
+		_asmPointer++;
+	}
 }
