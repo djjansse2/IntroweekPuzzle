@@ -69,7 +69,7 @@ class Pipe
 {
 private:
     /* data */
-    static const int UPDATE_DELAY = 1000;
+    static const int UPDATE_DELAY = 333;
 
     uint64_t lastUpdateTime = 0;
 

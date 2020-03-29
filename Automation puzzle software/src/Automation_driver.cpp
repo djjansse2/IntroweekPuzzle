@@ -75,15 +75,15 @@ void Automation_driver::test(){
     this->pipes[PIPE_6_A].set_color_by_mix(this->pipes[PIPE_2], this->pipes[PIPE_3]);
     this->pipes[PIPE_6_B].set_color_by_extension(this->pipes[PIPE_6_A]);
     this->pipes[PIPE_6_C].set_color_by_extension(this->pipes[PIPE_6_A]);
-    this->pipes[PIPE_7].set_color_by_valve(VALVE_3_BIT, this->pipes[PIPE_8_A]);
+    this->pipes[PIPE_7].set_color_by_valve(VALVE_3_BIT, this->pipes[PIPE_8_C]);
     this->pipes[PIPE_8_A].set_color_by_mix(this->pipes[PIPE_4], this-> pipes[PIPE_13]);
     this->pipes[PIPE_8_B].set_color_by_extension(this->pipes[PIPE_8_A]);
     this->pipes[PIPE_8_C].set_color_by_extension(this->pipes[PIPE_8_A]);
     this->pipes[PIPE_9].set_color_by_mix(this->pipes[PIPE_1], this->pipes[PIPE_7]);
-    this->pipes[PIPE_10].set_color_by_valve(VALVE_1_BIT, this->pipes[PIPE_6_A]);
-    this->pipes[PIPE_11].set_color_by_valve(VALVE_0_BIT, this->pipes[PIPE_8_A]);
+    this->pipes[PIPE_10].set_color_by_valve(VALVE_1_BIT, this->pipes[PIPE_6_B]);
+    this->pipes[PIPE_11].set_color_by_valve(VALVE_0_BIT, this->pipes[PIPE_8_B]);
     this->pipes[PIPE_12].set_color_by_valve(VALVE_2_BIT, this->pipes[PIPE_9]);
-    this->pipes[PIPE_13].set_color_by_valve(VALVE_4_BIT, this->pipes[PIPE_9]);
+    this->pipes[PIPE_13].set_color_by_valve(VALVE_4_BIT, this->pipes[PIPE_6_C]);
     this->pipes[PIPE_14].set_color_by_mix(this->pipes[PIPE_5], this->pipes[PIPE_12]);
 
     this->neoPixel.show();
