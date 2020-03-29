@@ -95,7 +95,7 @@ public:
     Pipe(/* args */);
     ~Pipe();
 
-    void begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel);
+    void begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel, bool isReverseDirection);
 
     void set_color_by_valve(VALVE_BIT valve, Pipe connectedPipe);
     void set_color_by_valve(VALVE_BIT valve, Color color);

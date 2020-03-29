@@ -19,10 +19,12 @@ Pipe::~Pipe()
 {
 }
 
-void Pipe::begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel){
+void Pipe::begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel, bool isReverseDirection){
     uint64_t checkIfOwned = this->PIXEL_BANK & pixels; //get a mask of already owned pixels
     pixels ^= checkIfOwned; //remove already owned pixel from the list
     this->PIXEL_BANK |= (this->ownedPixels = pixels); //store the owned pixels in the pipe and mark them as owned
+
+    this->isReverseDirection = isReverseDirection;
 
     this->neoPixel = neoPixel;
 }
@@ -76,7 +78,7 @@ void Pipe::move_current_pixel(){
 void Pipe::set_color_by_valve(VALVE_BIT valve, Pipe connectedPipe){
     if (ToggleSwitch::is_valve_open(valve))
     {
-        this->set_pipe_color(connectedPipe.pipeColor);
+        this->set_pipe_color(connectedPipe.outColor);
     }else{
         this->set_pipe_color({0,0,0});
     }
@@ -93,8 +95,8 @@ void Pipe::set_color_by_valve(VALVE_BIT valve, Color color){
 }
 
 void Pipe::set_color_by_mix(Pipe pipe1, Pipe pipe2){
-    Color pipe1Color = pipe1.pipeColor;
-    Color pipe2Color = pipe2.pipeColor;
+    Color pipe1Color = pipe1.outColor;
+    Color pipe2Color = pipe2.outColor;
 
     bool isPipe1On = !(  pipe1Color.red == 0 && 
                         pipe1Color.green == 0 &&
