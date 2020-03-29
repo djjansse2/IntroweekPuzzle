@@ -81,11 +81,13 @@ private:
     uint64_t ownedPixels;
 
     Color pipeColor;
+    Color outColor;
 
     bool isReverseDirection = false;
 
     void set_pipe_color(Color color); 
     void move_current_pixel();
+    void reset_current_pixel();
 
 public:
 

@@ -3,6 +3,14 @@
 
 uint64_t Pipe::PIXEL_BANK = 0;
 
+bool operator!=(Color color1, Color color2){
+    return !(
+        color1.red == color2.red &&
+        color1.green == color2.green &&
+        color1.blue == color2.blue
+    );
+}
+
 Pipe::Pipe(/* args */)
 {
 }
@@ -20,6 +28,12 @@ void Pipe::begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel){
 }
 
 void Pipe::set_pipe_color(Color color){
+
+    if (color != this->pipeColor)
+    {
+        this->reset_current_pixel();
+    }
+
     this->pipeColor = color;
 
     while (   this->currentPixel < NUMBER_OF_PIXELS && 
@@ -36,21 +50,26 @@ void Pipe::set_pipe_color(Color color){
     };
 }
 
-void Pipe::move_current_pixel(){
+void Pipe::reset_current_pixel(){
+    if (this->isReverseDirection)
+    {
+        this->currentPixel = (NUMBER_OF_PIXELS - 1);
+    }else{
+        this->currentPixel = 0;
+    }
+}
 
+void Pipe::move_current_pixel(){
     if (this->isReverseDirection)
     {
         --this->currentPixel;
-
-        if(this->currentPixel < 0){
-            this->currentPixel = (NUMBER_OF_PIXELS - 1);
-        }
     }else{
         ++this->currentPixel;
+    }
 
-        if(this->currentPixel == NUMBER_OF_PIXELS){
-            this->currentPixel = 0;
-        }
+    if (this->currentPixel == NUMBER_OF_PIXELS || this->currentPixel < 0)
+    {
+        this->outColor = this->pipeColor;
     }
 }
 
