@@ -22,13 +22,35 @@ void Pipe::begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel){
 void Pipe::set_pipe_color(Color color){
     this->pipeColor = color;
 
-    for (int i = 0; i < NUMBER_OF_PIXELS; i++)
-    {
-        if ((this->ownedPixels >> i) & 1) 
-        {
-            (*this->neoPixel).setPixelColor(i, (*this->neoPixel).Color(color.red,color.green,color.blue));
-        }
+    while (   this->currentPixel < NUMBER_OF_PIXELS && 
+    (millis() - this->lastUpdateTime) > UPDATE_DELAY){
         
+        if ((this->ownedPixels >> this->currentPixel) & 1) 
+        {
+            (*this->neoPixel).setPixelColor(this->currentPixel, 
+                                            (*this->neoPixel).Color(color.red,color.green,color.blue));
+            this->lastUpdateTime = millis();
+        }
+
+        this->move_current_pixel();      
+    };
+}
+
+void Pipe::move_current_pixel(){
+
+    if (this->isReverseDirection)
+    {
+        --this->currentPixel;
+
+        if(this->currentPixel < 0){
+            this->currentPixel = (NUMBER_OF_PIXELS - 1);
+        }
+    }else{
+        ++this->currentPixel;
+
+        if(this->currentPixel == NUMBER_OF_PIXELS){
+            this->currentPixel = 0;
+        }
     }
 }
 

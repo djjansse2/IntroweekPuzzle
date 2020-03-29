@@ -9,7 +9,7 @@
 #define LED_6_PIN           A1
 #define LED_7_PIN           A2
 #define LED_8_PIN           A3
-#define LED_9_PIN          13
+#define LED_9_PIN           13
 
 #define SW_0_PIN            2
 #define SW_1_PIN            3

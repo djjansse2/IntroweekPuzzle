@@ -69,6 +69,12 @@ class Pipe
 {
 private:
     /* data */
+    static const int UPDATE_DELAY = 1000;
+
+    uint64_t lastUpdateTime = 0;
+
+    int8_t currentPixel = 0;
+
     static uint64_t PIXEL_BANK;
     Adafruit_NeoPixel * neoPixel;
 
@@ -76,7 +82,10 @@ private:
 
     Color pipeColor;
 
+    bool isReverseDirection = false;
+
     void set_pipe_color(Color color); 
+    void move_current_pixel();
 
 public:
 
