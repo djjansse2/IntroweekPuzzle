@@ -69,14 +69,25 @@ class Pipe
 {
 private:
     /* data */
+    static const int UPDATE_DELAY = 333;
+
+    uint64_t lastUpdateTime = 0;
+
+    int8_t currentPixel = 0;
+
     static uint64_t PIXEL_BANK;
     Adafruit_NeoPixel * neoPixel;
 
     uint64_t ownedPixels;
 
     Color pipeColor;
+    Color outColor;
+
+    bool isReverseDirection = false;
 
     void set_pipe_color(Color color); 
+    void move_current_pixel();
+    void reset_current_pixel();
 
 public:
 
@@ -84,10 +95,12 @@ public:
     Pipe(/* args */);
     ~Pipe();
 
-    void begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel);
+    void begin(uint64_t pixels, Adafruit_NeoPixel * neoPixel, bool isReverseDirection);
 
     void set_color_by_valve(VALVE_BIT valve, Pipe connectedPipe);
     void set_color_by_valve(VALVE_BIT valve, Color color);
+
+    void set_color_by_extension(Pipe pipeToExtend);
 
     void set_color_by_mix(Pipe pipe1, Pipe pipe2);
 };

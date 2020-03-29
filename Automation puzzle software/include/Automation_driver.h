@@ -5,32 +5,43 @@
 #include "ToggleSwitch.h"
 #include "Pipe.h"
 
+#define AMOUNT_OF_PIPES (int)(18) 
+#define AMOUNT_OF_SWITCHES (int)(5)
+
+#define PIPE_1      (int)(0)
+#define PIPE_2      (int)(1)
+#define PIPE_3      (int)(2)
+#define PIPE_4      (int)(3)
+#define PIPE_5      (int)(4)
+#define PIPE_6_A    (int)(5)
+#define PIPE_7      (int)(6)
+#define PIPE_8_A    (int)(7)
+#define PIPE_9      (int)(8)
+#define PIPE_10     (int)(9)
+#define PIPE_11     (int)(10)
+#define PIPE_12     (int)(11)
+#define PIPE_13     (int)(12)
+#define PIPE_14     (int)(13)
+#define PIPE_8_B    (int)(14)
+#define PIPE_8_C    (int)(15)
+#define PIPE_6_B    (int)(16)
+#define PIPE_6_C    (int)(17)
+
+#define TOGGLESWITCH_1 (int)(0)
+#define TOGGLESWITCH_2 (int)(1)
+#define TOGGLESWITCH_3 (int)(2)
+#define TOGGLESWITCH_4 (int)(3)
+#define TOGGLESWITCH_5 (int)(4)
+
 class Automation_driver
 {
 private:
     /* data */
     Adafruit_NeoPixel neoPixel;
 
-    ToggleSwitch    toggleSwitch1, 
-                    toggleSwitch2, 
-                    toggleSwitch3, 
-                    toggleSwitch4, 
-                    toggleSwitch5;
+    ToggleSwitch    toggleSwitches[AMOUNT_OF_SWITCHES];
 
-    Pipe            pipe1,
-                    pipe2,
-                    pipe3,
-                    pipe4,
-                    pipe5,
-                    pipe6,
-                    pipe7,
-                    pipe8,
-                    pipe9,
-                    pipe10,
-                    pipe11,
-                    pipe12,
-                    pipe13,
-                    pipe14;
+    Pipe  pipes[AMOUNT_OF_PIPES];
                     
     void initialize_hardware();
 
