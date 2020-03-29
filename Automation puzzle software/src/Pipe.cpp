@@ -94,6 +94,10 @@ void Pipe::set_color_by_valve(VALVE_BIT valve, Color color){
     }
 }
 
+void Pipe::set_color_by_extension(Pipe pipeToExtend){
+    this->set_pipe_color(pipeToExtend.outColor);
+}
+
 void Pipe::set_color_by_mix(Pipe pipe1, Pipe pipe2){
     Color pipe1Color = pipe1.outColor;
     Color pipe2Color = pipe2.outColor;

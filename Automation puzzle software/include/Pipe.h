@@ -100,6 +100,8 @@ public:
     void set_color_by_valve(VALVE_BIT valve, Pipe connectedPipe);
     void set_color_by_valve(VALVE_BIT valve, Color color);
 
+    void set_color_by_extension(Pipe pipeToExtend);
+
     void set_color_by_mix(Pipe pipe1, Pipe pipe2);
 };
 
