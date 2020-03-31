@@ -35,7 +35,11 @@ public:
     ~ToggleSwitch();
 
     void begin(int switchPin, VALVE_BIT valves);
+    void begin(int switchPin);
+
     bool valve_update();
+
+    void set_valve_bits(VALVE_BIT valves);
 
     static bool is_valve_open(VALVE_BIT valve);
 };

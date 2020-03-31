@@ -22,6 +22,25 @@ void ToggleSwitch::begin(int switchPin, VALVE_BIT valves){
     }
 }
 
+void ToggleSwitch::begin(int switchPin){
+    this->switchPin = switchPin;
+    this->boundValves = 0;
+}
+
+void ToggleSwitch::set_valve_bits(VALVE_BIT valves){
+    bool isSwitchOn = static_cast<bool>(digitalRead(this->switchPin)); 
+
+    this->switchOldState = isSwitchOn;
+
+    if (isSwitchOn){
+        this->toggle_all();
+        this->boundValves = valves;
+        this->toggle_all();
+    }else{
+        this->boundValves = valves;
+    }
+}
+
 bool ToggleSwitch::valve_update(){
     bool isSwitchOn = static_cast<bool>(digitalRead(this->switchPin));
 
@@ -35,7 +54,7 @@ bool ToggleSwitch::valve_update(){
 }
 
 void ToggleSwitch::toggle_valve(VALVE_BIT bit){
-        switch (bit)
+    switch (bit)
     {
     case VALVE_0_BIT:
         digitalWrite(LED_0_PIN, !digitalRead(LED_0_PIN));

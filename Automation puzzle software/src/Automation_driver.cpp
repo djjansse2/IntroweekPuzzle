@@ -1,8 +1,7 @@
+#include <Wire.h>
+
 #include "Automation_driver.h"
-
-
 #include "Automation_settings.h"
-
 
 Automation_driver::Automation_driver(/* args */)
 {
@@ -11,6 +10,10 @@ Automation_driver::Automation_driver(/* args */)
 Automation_driver::~Automation_driver()
 {
 }
+
+void onReceive(int amount){
+
+};
 
 void Automation_driver::begin(){
     this->initialize_hardware();
@@ -57,9 +60,12 @@ void Automation_driver::begin(){
     this->toggleSwitches[2].begin(SW_2_PIN, VALVE_4_BIT | VALVE_5_BIT);
     this->toggleSwitches[3].begin(SW_3_PIN, VALVE_6_BIT | VALVE_7_BIT);
     this->toggleSwitches[4].begin(SW_4_PIN, VALVE_8_BIT | VALVE_9_BIT);
+
+    Wire.begin(SLAVE_ADDRESS);
+    Wire.onReceive(onReceive);
 }
 
-void Automation_driver::test(){
+void Automation_driver::run(){
 
     this->toggleSwitches[TOGGLESWITCH_1].valve_update();
     this->toggleSwitches[TOGGLESWITCH_2].valve_update();
@@ -90,7 +96,6 @@ void Automation_driver::test(){
 }
 
 void Automation_driver::initialize_hardware(){
-    //TODO: optimize with a for each loop
     pinMode(LED_0_PIN, OUTPUT);
     pinMode(LED_1_PIN, OUTPUT);
     pinMode(LED_2_PIN, OUTPUT);
