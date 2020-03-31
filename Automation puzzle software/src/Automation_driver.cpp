@@ -147,46 +147,16 @@ void Automation_driver::initialize_hardware(){
     }
 }
 
-//TODO:clean this function
 void Automation_driver::interpret_message(){
     if (messageString == nullptr)
     {
         return;
     }
 
-    if (messageString->indexOf(',') == -1)
-    {    
-        this->interpret_string(String(*messageString));
-        delete messageString;
-        messageString = nullptr;
-        return;
-    }
-    
-    char * mainstring = NULL; 
-    strcpy(mainstring, (*messageString).c_str());
-
-    char * substring;
-
-    substring = strtok( mainstring , ",");
-
-    while (substring != NULL)
+    if (isdigit((*messageString)[0]) && messageString->indexOf(':') == 1) 
     {
-        Serial.println(substring);
-        this->interpret_string(String(substring));
-        substring = strtok(NULL, ",");
-    }
-
-    messageString = nullptr;
-    delete messageString;
-}
-
-void Automation_driver::interpret_string(String message){
-    if (isdigit(message[0]) && message.indexOf(':') == 1) 
-    {
-        String valves = message.substring(2);
-
-        int toggleSwitch = message[0] - '0';
-
+        String valves = messageString->substring(2);
+        int toggleSwitch = (*messageString)[0] - '0';
         VALVE_BIT setValves = NO_VALVES_SELECTED;
 
         for(const char& n : valves){
@@ -195,9 +165,10 @@ void Automation_driver::interpret_string(String message){
                 setValves |= (0x1 << (n - '0'));           
             } 
         }
-
         this->update_switch(toggleSwitch, setValves);
     }
+    delete messageString;
+    messageString = nullptr;
 }
 
 void Automation_driver::update_switch(int toggleSwitch, VALVE_BIT valves){
