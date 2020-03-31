@@ -3,6 +3,8 @@
 #include "Automation_driver.h"
 #include "Automation_settings.h"
 
+static String* messageString = nullptr;
+
 Automation_driver::Automation_driver(/* args */)
 {
 }   
@@ -12,7 +14,17 @@ Automation_driver::~Automation_driver()
 }
 
 void onReceive(int amount){
+    String temp;
 
+    while (0 < Wire.available())
+    {
+        temp += (char)Wire.read();
+    }
+    
+    if (messageString == nullptr)
+    {
+        messageString = new String(temp);
+    }
 };
 
 void Automation_driver::begin(){
@@ -66,6 +78,8 @@ void Automation_driver::begin(){
 }
 
 void Automation_driver::run(){
+
+    this->interpret_message();
 
     this->toggleSwitches[TOGGLESWITCH_1].valve_update();
     this->toggleSwitches[TOGGLESWITCH_2].valve_update();
@@ -133,3 +147,59 @@ void Automation_driver::initialize_hardware(){
     }
 }
 
+//TODO:clean this function
+void Automation_driver::interpret_message(){
+    if (messageString == nullptr)
+    {
+        return;
+    }
+
+    if (messageString->indexOf(',') == -1)
+    {    
+        this->interpret_string(String(*messageString));
+        delete messageString;
+        messageString = nullptr;
+        return;
+    }
+    
+    char * mainstring = NULL; 
+    strcpy(mainstring, (*messageString).c_str());
+
+    char * substring;
+
+    substring = strtok( mainstring , ",");
+
+    while (substring != NULL)
+    {
+        Serial.println(substring);
+        this->interpret_string(String(substring));
+        substring = strtok(NULL, ",");
+    }
+
+    messageString = nullptr;
+    delete messageString;
+}
+
+void Automation_driver::interpret_string(String message){
+    if (isdigit(message[0]) && message.indexOf(':') == 1) 
+    {
+        String valves = message.substring(2);
+
+        int toggleSwitch = message[0] - '0';
+
+        VALVE_BIT setValves = NO_VALVES_SELECTED;
+
+        for(const char& n : valves){
+            if (isdigit(n))
+            {
+                setValves |= (0x1 << (n - '0'));           
+            } 
+        }
+
+        this->update_switch(toggleSwitch, setValves);
+    }
+}
+
+void Automation_driver::update_switch(int toggleSwitch, VALVE_BIT valves){
+    this->toggleSwitches[toggleSwitch].set_valve_bits(valves);
+}

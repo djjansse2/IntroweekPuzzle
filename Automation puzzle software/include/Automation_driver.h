@@ -47,6 +47,14 @@ private:
                     
     void                initialize_hardware();
 
+private:
+    void                check_switches();//TODO: make this member
+    void                update_pipes();//TODO: make this member
+
+    void                interpret_message();
+    void                update_switch(int toggleSwitch, VALVE_BIT valves);
+    void                interpret_string(String switchMessage);
+
 public:
     Automation_driver(/* args */);
     ~Automation_driver();
@@ -54,8 +62,6 @@ public:
 
 public:
     void                run();
-
-    void                setMessage(String message);
 };
 
 

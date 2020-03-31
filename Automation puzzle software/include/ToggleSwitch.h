@@ -4,6 +4,7 @@
 
 typedef uint16_t VALVE_BIT;
 
+#define NO_VALVES_SELECTED    (VALVE_BIT)(0x0)  
 #define VALVE_0_BIT           (VALVE_BIT)(1 << 0)
 #define VALVE_1_BIT           (VALVE_BIT)(1 << 1)
 #define VALVE_2_BIT           (VALVE_BIT)(1 << 2)
@@ -13,7 +14,7 @@ typedef uint16_t VALVE_BIT;
 #define VALVE_6_BIT           (VALVE_BIT)(1 << 6)
 #define VALVE_7_BIT           (VALVE_BIT)(1 << 7)
 #define VALVE_8_BIT           (VALVE_BIT)(1 << 8)
-#define VALVE_9_BIT          (VALVE_BIT)(1 << 9)
+#define VALVE_9_BIT           (VALVE_BIT)(1 << 9)
 
 class ToggleSwitch
 {
