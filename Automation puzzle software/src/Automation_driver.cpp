@@ -3,7 +3,8 @@
 #include "Automation_driver.h"
 #include "Automation_settings.h"
 
-static String* messageString = nullptr;
+const size_t bufferSize = 80;
+static char buffer[bufferSize];
 
 Automation_driver::Automation_driver(/* args */)
 {
@@ -14,20 +15,21 @@ Automation_driver::~Automation_driver()
 }
 
 void onReceive(int amount){
-    String temp;
-
-    while (0 < Wire.available())
+    if (buffer[0] != '\0')
     {
-        temp += (char)Wire.read();
+        return;
     }
     
-    if (messageString == nullptr)
+    while (0 < Wire.available())
     {
-        messageString = new String(temp);
+        char n = (char)Wire.read();
+        strncat(buffer, &n, 1);
     }
 };
 
 void Automation_driver::begin(){
+    memset(buffer, '\0', bufferSize);
+
     this->initialize_hardware();
 
     this->pipes[PIPE_1].begin(  PIXEL_25_BIT| PIXEL_26_BIT | PIXEL_27_BIT | PIXEL_28_BIT, 
@@ -90,7 +92,7 @@ void Automation_driver::run(){
     this->pipes[PIPE_1].set_color_by_valve(VALVE_6_BIT, {10, 0, 0});
     this->pipes[PIPE_2].set_color_by_valve(VALVE_7_BIT, {10, 0, 0});
     this->pipes[PIPE_3].set_color_by_valve(VALVE_8_BIT, {10, 3, 0});
-    this->pipes[PIPE_4].set_color_by_valve(VALVE_8_BIT, {0, 0, 10});
+    this->pipes[PIPE_4].set_color_by_valve(VALVE_9_BIT, {0, 0, 10});
     this->pipes[PIPE_5].set_color_by_valve(VALVE_5_BIT, {10, 3, 0});
     this->pipes[PIPE_6_A].set_color_by_mix(this->pipes[PIPE_2], this->pipes[PIPE_3]);
     this->pipes[PIPE_6_B].set_color_by_extension(this->pipes[PIPE_6_A]);
@@ -147,28 +149,33 @@ void Automation_driver::initialize_hardware(){
     }
 }
 
-void Automation_driver::interpret_message(){
-    if (messageString == nullptr)
+void Automation_driver::interpret_message(){ 
+
+    if (buffer[0] == '\0')
     {
         return;
     }
+    
+    char * colonAddres = strchr(buffer, ':');
 
-    if (isdigit((*messageString)[0]) && messageString->indexOf(':') == 1) 
+    if (isdigit(buffer[0]) && (colonAddres - buffer) == 1) 
     {
-        String valves = messageString->substring(2);
-        int toggleSwitch = (*messageString)[0] - '0';
+        char * valves = colonAddres + 1;
+        int toggleSwitch = buffer[0] - '0';
         VALVE_BIT setValves = NO_VALVES_SELECTED;
 
-        for(const char& n : valves){
-            if (isdigit(n))
+        while(*valves != '\0'){
+            if (isdigit(*valves))
             {
-                setValves |= (0x1 << (n - '0'));           
-            } 
+                setValves |= (0x1 << (*valves - '0'));           
+            }
+            valves++;
         }
+
         this->update_switch(toggleSwitch, setValves);
     }
-    delete messageString;
-    messageString = nullptr;
+
+    memset(buffer, '\0', bufferSize);
 }
 
 void Automation_driver::update_switch(int toggleSwitch, VALVE_BIT valves){

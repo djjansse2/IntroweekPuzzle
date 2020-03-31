@@ -10,7 +10,6 @@ void setup() {
 
   /*Initialize the driver*/
   driver.begin();
-  Serial.begin(9600);
 }
 
 void loop() {
