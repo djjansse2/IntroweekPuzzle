@@ -5,6 +5,7 @@
 
 const size_t bufferSize = 80;
 static char buffer[bufferSize];
+static bool toggleSwitchStates[5];
 
 Automation_driver::Automation_driver(/* args */)
 {
@@ -26,6 +27,18 @@ void onReceive(int amount){
         strncat(buffer, &n, 1);
     }
 };
+
+void onRequest(){
+    byte states = 0;
+
+    states |= ((byte)toggleSwitchStates[0]) << 0;
+    states |= ((byte)toggleSwitchStates[1]) << 1;
+    states |= ((byte)toggleSwitchStates[2]) << 2;
+    states |= ((byte)toggleSwitchStates[3]) << 3;
+    states |= ((byte)toggleSwitchStates[4]) << 4;
+
+    Wire.write(states);
+}
 
 void Automation_driver::begin(){
     memset(buffer, '\0', bufferSize);
@@ -77,6 +90,7 @@ void Automation_driver::begin(){
 
     Wire.begin(SLAVE_ADDRESS);
     Wire.onReceive(onReceive);
+    Wire.onRequest(onRequest);
 }
 
 void Automation_driver::run(){
@@ -88,6 +102,12 @@ void Automation_driver::run(){
     this->toggleSwitches[TOGGLESWITCH_3].valve_update();
     this->toggleSwitches[TOGGLESWITCH_4].valve_update();
     this->toggleSwitches[TOGGLESWITCH_5].valve_update();
+
+    toggleSwitchStates[0] = digitalRead(SW_0_PIN);
+    toggleSwitchStates[1] = digitalRead(SW_1_PIN);
+    toggleSwitchStates[2] = digitalRead(SW_2_PIN);
+    toggleSwitchStates[3] = digitalRead(SW_3_PIN);
+    toggleSwitchStates[4] = digitalRead(SW_4_PIN);
 
     this->pipes[PIPE_1].set_color_by_valve(VALVE_6_BIT, {10, 0, 0});
     this->pipes[PIPE_2].set_color_by_valve(VALVE_7_BIT, {10, 0, 0});
