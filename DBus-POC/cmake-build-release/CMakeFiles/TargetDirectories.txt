@@ -1,0 +1,5 @@
+/home/max/Max/School/python/DBus-POC/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/max/Max/School/python/DBus-POC/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/max/Max/School/python/DBus-POC/cmake-build-release/CMakeFiles/DBus_POC.dir
+/home/max/Max/School/python/DBus-POC/cmake-build-release/CMakeFiles/package_source.dir
+/home/max/Max/School/python/DBus-POC/cmake-build-release/CMakeFiles/package.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/quickstart-client.dir/quickstart_client_0.o  -o quickstart-client  -L/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release -Wl,-rpath,/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release -ldbus-cxx -lrt 
