@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/DBus_POC.dir/client3.cpp.o  -o ../DBus_POC -ldbus-cxx -ldbus-1 -lsigc-2.0 -lrt 

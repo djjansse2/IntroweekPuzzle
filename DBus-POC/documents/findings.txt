@@ -1,0 +1,13 @@
+-- Dbus objects are static.
+-- very useful for creating distributed singleton applications
+
+
+python dependencies:
+pip3 install dbus
+pip3 install gi.repository
+
+c++ dependencies:
+sudo apt-get -y install dbus libdbus-1-dev libdbus-glib-1-2 libdbus-glib-1-dev libsigc++-2.0-dev
+
+
+

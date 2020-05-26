@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="dbus-cxx"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cpplib\;CMake Files\cpplib\dbus-cxx-0.11.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-method.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-method.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbus-cxx">
+				<Option output="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/libdbus-cxx.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/dbus-cxx"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/sigc++-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 dbus-cxx"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dbus-cxx/fast">
+				<Option output="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/libdbus-cxx.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+					<Add directory="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/dbus-cxx"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/sigc++-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 dbus-cxx/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-interface.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-interface.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-methodproxybase.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-methodproxybase.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-signal_proxy.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-signal_proxy.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-object.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-object.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-methodproxy.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-methodproxy.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-objectproxy.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-objectproxy.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-connection.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-connection.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-method_impl.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-method_impl.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-dbus_signal.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-dbus_signal.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="generate-interfaceproxy.h">
+				<Option working_dir="/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 generate-interfaceproxy.h"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/max/Max/School/python/DBus-POC/cmake-build-release/cpplib/dbus-cxx-0.11.0/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/callmessage.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/callmessage.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/connection.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/dispatcher.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/dispatcher.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/error.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/error.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/errormessage.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/errormessage.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/interface.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/interfaceproxy.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/message.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/message.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messageappenditerator.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messageappenditerator.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messagefilter.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messagefilter.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messagehandler.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messagehandler.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messageiterator.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/messageiterator.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/methodbase.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/methodbase.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/methodproxybase.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/object.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/objectpathhandler.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/objectpathhandler.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/objectproxy.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/path.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/path.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/pendingcall.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/pendingcall.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/returnmessage.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/returnmessage.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signal_base.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signal_base.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signal_proxy_base.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signal_proxy_base.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signalmessage.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signalmessage.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signalreceiver.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signalreceiver.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signature.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signature.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signatureiterator.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/signatureiterator.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/timeout.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/timeout.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/utility.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/utility.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/watch.cpp">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx/watch.h">
+			<Option target="dbus-cxx"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cpplib\dbus-cxx-0.11.0\"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx-1.0.pc.cmake">
+			<Option virtualFolder="CMake Files\cpplib\dbus-cxx-0.11.0\"/>
+		</Unit>
+		<Unit filename="/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/dbus-cxx-config.h.cmake">
+			<Option virtualFolder="CMake Files\cpplib\dbus-cxx-0.11.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
