@@ -1,1 +1,1 @@
-../../dbus-cxx/template.macros.m4
+dbus-cxx/template.macros.m4
