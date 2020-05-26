@@ -1,0 +1,4 @@
+/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release/CMakeFiles/quickstart-client.dir
+/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-release/CMakeFiles/quickstart-server.dir

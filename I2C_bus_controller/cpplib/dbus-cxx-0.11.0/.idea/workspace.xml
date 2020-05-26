@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="dbus-cxx" targetName="generate-interface.h" />
+      <config projectName="dbus-cxx" targetName="generate-methodproxybase.h" />
+      <config projectName="dbus-cxx" targetName="generate-dbus_signal.h" />
+      <config projectName="dbus-cxx" targetName="generate-method_impl.h" />
+      <config projectName="dbus-cxx" targetName="generate-object.h" />
+      <config projectName="dbus-cxx" targetName="dbus-cxx" />
+      <config projectName="dbus-cxx" targetName="generate-connection.h" />
+      <config projectName="dbus-cxx" targetName="generate-method.h" />
+      <config projectName="dbus-cxx" targetName="generate-objectproxy.h" />
+      <config projectName="dbus-cxx" targetName="generate-signal_proxy.h" />
+      <config projectName="dbus-cxx" targetName="generate-methodproxy.h" />
+      <config projectName="dbus-cxx" targetName="generate-interfaceproxy.h" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4462aefa-a8b6-4941-92bc-ad4d0202785a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1YwB6CNyb9cYEVkgltROOyAEM37" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Tools/dbus-cpp/dbus-cxx-0.11.0" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RunManager" selected="CMake Application.dbus-cxx">
+    <configuration name="dbus-cxx" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="dbus-cxx" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-connection.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-connection.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-dbus_signal.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-dbus_signal.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-interface.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-interface.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-interfaceproxy.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-interfaceproxy.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-method.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-method.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-method_impl.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-method_impl.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-methodproxy.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-methodproxy.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-methodproxybase.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-methodproxybase.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-object.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-object.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-objectproxy.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-objectproxy.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="generate-signal_proxy.h" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="dbus-cxx" TARGET_NAME="generate-signal_proxy.h" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.dbus-cxx" />
+      <item itemvalue="CMake Application.generate-connection.h" />
+      <item itemvalue="CMake Application.generate-dbus_signal.h" />
+      <item itemvalue="CMake Application.generate-interface.h" />
+      <item itemvalue="CMake Application.generate-interfaceproxy.h" />
+      <item itemvalue="CMake Application.generate-method.h" />
+      <item itemvalue="CMake Application.generate-method_impl.h" />
+      <item itemvalue="CMake Application.generate-methodproxy.h" />
+      <item itemvalue="CMake Application.generate-methodproxybase.h" />
+      <item itemvalue="CMake Application.generate-object.h" />
+      <item itemvalue="CMake Application.generate-objectproxy.h" />
+      <item itemvalue="CMake Application.generate-signal_proxy.h" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4462aefa-a8b6-4941-92bc-ad4d0202785a" name="Default Changelist" comment="" />
+      <created>1583843598723</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583843598723</updated>
+      <workItem from="1583843600472" duration="221000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="679" y="276" width="619" height="553" key="#dbus-cxx" timestamp="1583843685650">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="679" y="276" width="619" height="553" key="#dbus-cxx/67.27.1853.1053@67.27.1853.1053" timestamp="1583843685650" />
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583843820285">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583843820285" />
+    <state x="482" y="187" key="SettingsEditor" timestamp="1583843670905">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583843670905" />
+  </component>
+</project>

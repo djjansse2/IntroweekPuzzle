@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dion/AutomationGameController/I2C_bus/I2C_Controller.cpp
+I2C_Controller.h
+/home/dion/AutomationGameController/I2C_bus/I2C_Controller.h
+linux/i2c-dev.h
+-
+sys/ioctl.h
+-
+fcntl.h
+-
+unistd.h
+-
+stdlib.h
+-
+stdint.h
+-
+stdio.h
+-
+string.h
+-
+
+/home/dion/AutomationGameController/I2C_bus/I2C_Controller.h
+mutex
+-
+queue
+-
+string
+-
+dbus-cxx-0.11/dbus-cxx.h
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/i2c_controller.dir/Source.cpp.o CMakeFiles/i2c_controller.dir/I2C_Controller.cpp.o  -o i2c_controller  -ldbus-cxx -ldbus-1 -lsigc-2.0 
