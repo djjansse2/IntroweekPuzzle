@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/quickstart-server.dir/quickstart_server_0.o  -o quickstart-server  -L/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-debug-gcc -Wl,-rpath,/home/max/Max/School/python/DBus-POC/cpplib/dbus-cxx-0.11.0/examples/quick-start/cmake-build-debug-gcc -ldbus-cxx -lrt 
